@@ -1,0 +1,108 @@
+/*Customized product description */
+h1.product_title.entry-title {
+	color: black;
+}
+
+/*bdi {*/
+/*	color:black;*/
+/*}*/
+
+span.ast-shipping-text {
+	color: graytext;
+}
+
+button.single_add_to_cart_button.button.alt {
+	margin-top: 3px;
+	
+}
+
+/* Display the image gallery and thumbnails side-by-side (horizontally) */
+.woocommerce-product-gallery {
+	display: flex;
+	column-gap: 14px;
+	margin: 0 !important;
+}
+
+/* Make the image gallery take around 80% of total width */
+.woocommerce-product-gallery .flex-viewport {
+	flex-basis: 82%;
+	margin: 0 !important;
+}
+
+/* Make the thumnail image container take around 20% of total width and customize its design */
+.flex-control-thumbs {
+	flex-basis: 18%;
+	z-index: 2;
+	height: 385px !important;
+	padding: 10px !important;
+	margin: auto 0 !important;
+}
+
+/* Customize the gallery image */
+.woocommerce-product-gallery__image img {
+	border-radius: 8px;
+	object-fit: cover;
+}
+
+/* Adjust position of the full-size image trigger button */
+.woocommerce-product-gallery__trigger {
+	right: 4.5em !important;
+}
+
+/* Adjust the width and spaces of individual thumbnail image containers and add transition for sliding effect */
+.flex-control-thumbs li {
+	min-width: 100%;
+	margin-bottom: 10px !important;
+	transition: margin-top 0.4s linear;
+}
+
+/* Make the thumbnail images' corners a bit rounded to match brand design */
+.flex-control-thumbs li img {
+	border-radius: 6px;
+}
+
+/* Add borders to the active thumbnail image for clear indication */
+.flex-active {
+	border: 2px solid #4338ca;
+}
+
+
+/* Increase font weight of breadcrumb texts */
+.woocommerce-breadcrumb {
+	font-weight: 500;
+}
+
+/* Hightlight the links in breadcrumb for design purpose */
+.woocommerce-breadcrumb a {
+	color: #4338CA !important;
+}
+
+/* Increase font weight of product title and add some space at top */
+.entry-title {
+	font-weight: 600;
+	margin-top: 30px !important;
+}
+
+/* Add another border below the product meta information (SKU and categories) */
+.product_meta {
+	border-bottom: 1px solid var(--ast-border-color);
+	padding-bottom: 0.5em;
+}
+
+/* Add space between short description and button sections */
+.entry-summary form {
+	margin-top: 36px;
+}
+
+/* Customize the quantity selector */
+.product .quantity input[type=number] {
+	padding: 8px;
+	border-radius: 6px;
+	border: 2px solid var(--ast-border-color);
+}
+
+/* Make the quantity selector always visible (not only on hover) */
+input[type=number]::-webkit-inner-spin-button, 
+input[type=number]::-webkit-outer-spin-button {
+	opacity: 1;
+}
